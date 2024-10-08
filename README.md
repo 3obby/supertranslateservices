@@ -1,46 +1,42 @@
-# Super Translate
+# SuperTranslate
 
-Welcome to Super Translate! This project provides seamless translation services with multiple language translation models, including OpenAI, Azure Translator, DeepL, and Google Translate (both v2 and v3). Users can translate text between languages using different translation models and receive feedback on the translation's quality.
+Welcome to **SuperTranslate**! This project is a robust translation service that supports multiple translation providers such as OpenAI, Azure Translator, DeepL, and Google Translate. The platform is designed to translate texts seamlessly between languages while also providing satisfaction ratings based on translation accuracy.
 
-**Live Demo:** [Super Translate Web Application](https://super-translate.vercel.app/)
+**Live Demo:** [SuperTranslate Web Application](https://super-translate.vercel.app/)
 
-## About Super Translate
+## About SuperTranslate
 
-Super Translate is designed to allow users to translate text across multiple languages using different translation engines. It provides insights into the satisfaction level of each translation and the time taken for the translation to complete, making it easy to compare different models for accuracy and performance.
+SuperTranslate leverages various translation APIs to allow users to get translations with a satisfaction score, response time, and more. This service supports multiple providers and is built with a scalable architecture, making it suitable for various translation needs.
 
 ## Built With
 
 This project uses a robust stack of modern technologies for optimal performance and ease of use:
 
-* [![Next][Next.js]][Next-url]
-* [![Node.js][Node.js]][Node-url]
-* [![Express.js][Express.js]][Express-url]
-* [![MongoDB][MongoDB]][MongoDB-url]
-* ![OpenAI API](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-* [Azure Translator API](https://azure.microsoft.com/en-us/services/cognitive-services/translator/)
-* [DeepL API](https://www.deepl.com/)
-* [Google Cloud Translate API](https://cloud.google.com/translate)
+- ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+- ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white)
+- ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+- ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+- ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+- [Azure Translator API](https://azure.microsoft.com/en-us/services/cognitive-services/translator/)
+- [DeepL API](https://www.deepl.com/en/docs-api/)
+- [Google Cloud Translate API](https://cloud.google.com/translate)
 
-## Key Features
+### Key Features:
 
-- **Multiple Translation Models:** Access to OpenAI, Azure, DeepL, Google Translate v2, and Google Translate v3 for comprehensive translation coverage.
-- **Performance and Satisfaction Feedback:** Track how long translations take and get a satisfaction rating for each translation's accuracy and meaning preservation.
-- **Unified API Endpoint:** Single API endpoint to handle translation across all models.
-- **Multi-language Support:** Translate texts across numerous languages using the most advanced translation engines.
-- **Deployment:** Backend deployed on Render, and frontend on Vercel for reliable and scalable performance.
+- **Multi-Provider Translation**: Translate using OpenAI, Azure, DeepL, or Google Translate.
+- **Satisfaction Rating**: Get feedback on translation quality with satisfaction levels ranging from "Very Unsatisfied" to "Very Satisfied."
+- **API Integration**: Easily integrate multiple translation APIs in a single platform.
+- **Performance Tracking**: Time the translation requests and responses from each provider to monitor performance.
 
 ## Usage
 
-The Super Translate platform allows you to translate text with various models and receive feedback on translation satisfaction and performance.
+To use the SuperTranslate platform, you can make POST requests to different translation endpoints. The response will contain the translation, satisfaction level, and response time. 
 
-### Request Format
-
-You can use the following request format to perform translations with any supported model:
-
+Example Request:
 ```json
 {
-  "model": "openai", 
-  "text": "I am lucky to be here", 
-  "sourceLanguage": "English", 
+  "model": "openai",
+  "text": "Hello there",
+  "sourceLanguage": "English",
   "targetLanguage": "Amharic"
 }
