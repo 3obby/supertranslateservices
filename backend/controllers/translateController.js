@@ -14,7 +14,6 @@ const {
 
 const { performance } = require('perf_hooks');
 
-// Unified Translation Endpoint
 const unifiedTranslateEndpoint = async (req, res) => {
   const modelMap = {
     openai: openaiTranslate,
