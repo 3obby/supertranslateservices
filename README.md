@@ -15,11 +15,10 @@ This project uses a robust stack of modern technologies for optimal performance 
 - ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 - ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white)
 - ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
-- ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 - ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-- [Azure Translator API](https://azure.microsoft.com/en-us/services/cognitive-services/translator/)
-- [DeepL API](https://www.deepl.com/en/docs-api/)
-- [Google Cloud Translate API](https://cloud.google.com/translate)
+- ![Azure Translator](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+- ![DeepL](https://img.shields.io/badge/DeepL-0D1729?style=for-the-badge&logo=deepl&logoColor=white)
+- ![Google Cloud Translate](https://img.shields.io/badge/Google%20Translate-4285F4?style=for-the-badge&logo=google-translate&logoColor=white)
 
 ### Key Features:
 
