@@ -9,11 +9,6 @@ const translationClientV3 = new TranslationServiceClient();
 const googleProjectId = process.env.GOOGLE_CLOUD_PROJECT_ID || 'supertranslate';
 const location = 'global';
 
-/**
- * @param {string} text - The text to translate.
- * @param {string} targetLanguage - The target language for translation.
- * @returns {Promise<string>} - The translated text.
- */
 const googleTranslateTextV3 = async (text, targetLanguage) => {
   try {
 
