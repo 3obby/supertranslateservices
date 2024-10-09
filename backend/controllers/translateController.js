@@ -67,8 +67,16 @@ const unifiedTranslateEndpoint = async (req, res) => {
       time: ((end - start) / 1000).toFixed(2) // Time in seconds
     });
   } catch (error) {
-    console.error('Error during translation:', error.message);
-    res.status(500).json({ message: 'Internal server error' });
+    const translation = "Could not tranlsate";
+    const model = req.body.model;
+    const satisfaction = "Could not tranlsate";
+
+    res.json({
+      model,
+      translation,
+      satisfaction,
+      time: 2 // Time in seconds
+    });
   }
 };
 
